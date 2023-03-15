@@ -22,7 +22,6 @@ function carregaElementosNaPagina(json){
         td = document.createElement("td");
         td.innerHTML = pessoa.salario;
         tr.appendChild(td)
-
         table.appendChild(tr);
     }
     const resultado = document.querySelector(".resultado");
