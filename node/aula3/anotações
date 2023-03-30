@@ -1,0 +1,30 @@
+|   2.  |   1.  |   0   |
+| major | minor | patch |
+
+MAJOR => Mudança de compatibilidade com as versões anteriores
+
+MINOR => Recursos novos
+
+PATCH => Correção de bugs
+
+^ => Irá atualizar o pacote para as versões MINOR e PATCH mais recentes "^2.1.0"
+
+~ => Irá atualizar somente as versões PATCH "~2.1.0"
+_____________________________________________________________________________________________________________________________________________
+
+                COMANDOS PARA O TERMINAL
+
+cd => para escolher a pasta que deseja usar o terminal "cd aula3"
+npm init -y => para baixar a versão mais simples do package.json
+npm install => para instalar pacotes adicionais "npm install (nome-do-pacote)"
+-E => para o pacote não ser atualizado para uma outra versão MINOR "npm install (nome-do-pacote) -E"
+npm update => para atualizar pacotes adicionais para versões mais recentes (somente atualiza versões MINOR e PATCH)
+--save-dev => para adicionar o pacote em 'devDependencies' "npm install (nome-do-pacote) --save-dev"
+--save-prod => para adicionar o pacote em 'dependencies' "npm  install (nome-do-pacote) --save-prod"
+npm  install (nome-do-pacote)@(versão-desejada) => para adicionar o pacote na versão desejada "npm install (nome-do-pacote)@2.1.0"
+npm uninstall (nome-do-pacote) => para desinstalar o pacote adicional "npm uninstall express"
+npm ls => para listar os pacotes instalados 
+--depth=(número-da-profundidade-que-deseja-ver) => para escolher o tamanho da lista que deseja ver "npm ls --detph=0"
+outdated => para saber quais pacotes estão desatualizados "npm outdated"
+
+
