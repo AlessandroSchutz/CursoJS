@@ -1,0 +1,77 @@
+LINK DE ACESSO PARA TODAS AS ABREVIAÇÕES: https://docs.emmet.io/cheat-sheet/
+
+  HTML 
+********
+
+! -> Cria o Documento HTML básico;
+
+link + : -> Cria o LINK da forma que desejar, basta complementar logo após os ":" (EX: link:css);
+
+div + . -> Cria uma div com CLASSES já definidas, basta complementar logo após o "." o nome da CLASSE que desejar (EX: div.minha-classe );
+
+div + # -> Cria uma div com ID já definido, basta complementar logo após a "#" o nome do ID que desejar (EX: div#meu-id );
+
+div + # + . -> Cria uma div com ID e CLASSE já definidos, basta complementar logo após a "# + ." o nome que desejar (EX: div#meu-id.minha-classe );
+
+div + # + . + CONTEÚDO -> Cria uma div com ID e CLASSE e o CONTEÚDO já definidos, basta complementar logo após a "# + . + CONTEÚDO" as informações que desejar 
+(EX: div#meu-id.minha-classe{Eu posso já colocar o conteúdo} );
+
+div* -> Cria a quantidade de div's que desejar, basta complementar logo após o "*" a quantidade que desejar (EX: div*3);
+
+div + # + . + CONTEÚDO + * -> Cria uma div com ID, CLASSE, CONTEÚDO e MULTIPLICA as div's, basta complementar logo após a "# + . + CONTEÚDO + *" as informações que desejar  
+(EX: div#meu-id.minha-classe{Eu posso já colocar o conteúdo}*3 );
+
+div + # + . + CONTEÚDO + * -> Cria uma div com ID, CLASSE, CONTEÚDO, MULTIPLICA as div's e as NÚMERA, basta complementar logo após a "# + $ + . + $ + CONTEÚDO + $ + *" as informações que desejar (EX: div#meu-id-$.minha-classe-${Eu posso já colocar o conteúdo $}*3 );
+
+ul>li{CONTEÚDO $}*10 -> Cria uma lista com 10 tópicos já enúmerados;
+
+ul>(li>a{CONTEÚDO $})*3 -> Cria uma lista com 3 tópicos já enúmerados com "a";
+
+ul>(li>a{CONTEÚDO $}[href="http://link.com/conteudo-$"])*3 -> Cria uma lista com 3 tópicos já enúmerados com "a" e com "href" já preenchidos;
+
+div.minha-classe#home>h1{Conteúdo Qualquer}+(p{Com qualquer conteúdo}>a{clique aqui}[href="#home"]+{para saber mais})*2 -> Cria uma div com quase todos os tópicos acima (Se for usar isso tu é doente);
+
+section>h1+div>(p>span)*3 -> Cria uma section com h1, div, p e span (Desssa forma é mais facil);
+
+___________________________________________________________________________________________________
+
+  CSS
+*******
+
+body {
+    w100p -> width: 100%;
+
+    h100vh -> heigth: 100vh;
+
+    m10rem -> margin: 10rem;
+
+    p10p -> padding: 10%;
+
+    df -> display: flex;
+
+    dg -> display: grid;
+
+    dn -> display: none;
+
+    db -> display: block;
+
+    bg -> backgrond: #000;
+
+    bgc -> backgrond-color: #fff;
+
+    bgi -> backgrond-image: url();
+
+    pos:a -> position: absolute;
+
+    t10rem -> top: 10rem;
+
+    b10rem -> bottom: 10rem;
+
+    r10rem -> rigth: 10rem;
+
+    l10rem -> left: 10rem;
+
+    fl -> float: left;
+
+    bxz -> box-sizing: border-box;
+}
