@@ -15,11 +15,12 @@ const flash = require("connect-flash"); // Mensagens autodestrutivas (mensagens 
 
 const routes = require("./routes") // Rotas das aplicações
 const path = require("path"); 
-const helmet = require("helmet"); // Recomendação do "express" DUVIDA -> (ler a documentação)
+//const helmet = require("helmet"); // Recomendação do "express" DUVIDA -> (ler a documentação)
 const csrf = require("csurf"); // Segurança do site DUVIDA -> (ler a documentação)
 const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require("./src/middlewares/middleware"); 
 
-app.use(helmet());
+//app.use(helmet());
+app.disable('x-powered-by');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, "public")));
@@ -50,8 +51,8 @@ app.use(csrfMiddleware);
 app.use(routes);
 
 app.on("pronto", () => {
-    app.listen(3000, () => {
-        console.log("Acessar http://localhost:3000");
-        console.log("Servidor executando na porta 3000");
+    app.listen(3001, () => {
+        console.log("Acessar http://localhost:3001");
+        console.log("Servidor executando na porta 3001");
     });
 });
