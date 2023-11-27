@@ -1,4 +1,4 @@
-module.exports = {
+"use strict";module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.changeColumn(
       'alunos',
@@ -10,6 +10,4 @@ module.exports = {
       },
     );
   },
-
-  async down() {},
 };
