@@ -9,7 +9,7 @@ router.get('/', userController.index); // Lista Usuários
 router.get('/:id', userController.show); // Lista Usuário
 
 // Deveria existir
-router.post('/', loginRequired, userController.store);
+router.post('/', userController.store);
 router.put('/', loginRequired, userController.update);
 router.delete('/', loginRequired, userController.delete);
 

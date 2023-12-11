@@ -10,4 +10,7 @@ module.exports = {
       },
     );
   },
+  async down(queryInterface, Sequelize) {
+    // Lógica para reverter as alterações no banco de dados
+  },
 };
