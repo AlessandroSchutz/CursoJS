@@ -9,7 +9,7 @@ export const Menu = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" state={'This is state from About'}>About</Link>
             </li>
             <li>
               <Link to="/posts">Post's</Link>
