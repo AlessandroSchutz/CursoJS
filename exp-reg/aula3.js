@@ -7,7 +7,7 @@ const { texto, arquivos } = require("./base");
 //  {'valor mínimo', 'valor máximo'} escolhe os valores {1,10} mínimo/máximo
 
 // console.log(texto);
-// const regExp1 = /Jo+ão+/gi;
+//  const regExp1 = /Jo+ão+/gi;
 // console.log(texto.match(regExp1));
 
 const regExp2 = /\.jpe*g/gi;
